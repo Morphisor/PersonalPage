@@ -3,5 +3,8 @@ const basePath = '/PersonalPage';
 
 module.exports = {
   basePath,
-  assetPrefix: `${basePath}/`
+  assetPrefix: `${basePath}/`,
+  env: {
+    BACKEND_URL: `${basePath}/`,
+},
 };

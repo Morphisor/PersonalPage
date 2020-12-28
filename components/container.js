@@ -1,6 +1,7 @@
 import Profile from './profile';
 import Avatar from './avatar';
 import { useThemeContext } from './theme-provider';
+import getUrl from '../utils/get-url';
 
 export default function Container() {
     const [ currentTheme, setTheme ] = useThemeContext();
@@ -11,7 +12,7 @@ export default function Container() {
     }
 
     return(
-        <div className={'font-sans antialiased leading-normal tracking-wider bg-cover ' + currentTheme.textClass} style={{ backgroundImage: "url('/background.jpg')" }}>
+        <div className={'font-sans antialiased leading-normal tracking-wider bg-cover ' + currentTheme.textClass} style={{ backgroundImage: "url('" + getUrl('/background.jpg') + "')" }}>
             <div className="max-w-4xl flex items-center h-screen flex-wrap mx-auto lg:my-0">
 
                 <Profile />
