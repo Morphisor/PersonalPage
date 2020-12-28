@@ -12,12 +12,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Build
-        run: |
-          npm --version
-          npm install
-          npm run build
-
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: npm install
+      - run: npm build
+        
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.1
         with:
