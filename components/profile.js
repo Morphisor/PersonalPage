@@ -9,7 +9,7 @@ export default function Profile() {
     return (
         <div className={'w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl opacity-75 mx-6 lg:mx-0 ' + currentTheme.backgroundClass}>
             <div className="p-4 md:p-12 text-center lg:text-left">
-                <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: "url('/avatar.png')" }}></div>
+                <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: "url('" + process.env.basePath + "/avatar.png')" }}></div>
 
                 <h1 className="text-3xl font-bold pt-8 lg:pt-0">Augusto Gallitri</h1>
                 <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
