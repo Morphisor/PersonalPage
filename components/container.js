@@ -11,7 +11,7 @@ export default function Container() {
     }
 
     return(
-        <div className={'font-sans antialiased leading-normal tracking-wider bg-cover ' + currentTheme.textClass} style={{ backgroundImage: "url('"+ process.env.basePath + "/background.jpg')" }}>
+        <div className={'font-sans antialiased leading-normal tracking-wider bg-cover ' + currentTheme.textClass} style={{ backgroundImage: "url('/background.jpg')" }}>
             <div className="max-w-4xl flex items-center h-screen flex-wrap mx-auto lg:my-0">
 
                 <Profile />
