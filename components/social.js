@@ -1,4 +1,4 @@
-import { faTwitter, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faGithub, faInstagram, faBlogger } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Social() {
@@ -12,6 +12,9 @@ export default function Social() {
             </a>
             <a className="link" href="https://www.instagram.com/augusto.gallitri/">
                 <FontAwesomeIcon className="h-6 fill-current text-gray-600 hover:text-green-700" icon={faInstagram} />
+            </a>
+            <a className="link" href="https://morphisor.vercel.app/">
+                <FontAwesomeIcon className="h-6 fill-current text-gray-600 hover:text-green-700" icon={faBlogger} />
             </a>
         </div>
     )
